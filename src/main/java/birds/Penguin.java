@@ -1,6 +1,6 @@
 package birds;
 
-public class Penguin implements Bird {
+public class Penguin implements Bird, SwimmableBird {
     String currentLocation;
     int numberOfFeathers;
 
@@ -13,6 +13,7 @@ public class Penguin implements Bird {
         this.numberOfFeathers -= 1;
     }
 
+    @Override
     public void swim() {
         this.currentLocation = "in the water";
     }
